@@ -18,7 +18,7 @@ steps:
 - task: Grunt@0
   displayName: 'Run Grunt'
   inputs:
-    gruntFile: 'gruntfile.js'
+    gruntFile: 'Gruntfile.js'
     targets: ''
     publishJUnitResults: 'true'
 
