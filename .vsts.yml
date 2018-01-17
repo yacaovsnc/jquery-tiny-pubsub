@@ -37,7 +37,7 @@ steps:
 - task: ArchiveFiles@2
   displayName: 'Create zip file artifact'
   inputs:
-    rootFolder: '$(system.defaultWorkingDirectory)'
+    rootFolder: '$(system.defaultWorkingDirectory)/dist'
     includeRootFolder: 'false'
 
 - task: PublishBuildArtifacts@1
