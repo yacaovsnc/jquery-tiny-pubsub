@@ -20,7 +20,7 @@ steps:
   inputs:
     gruntFile: 'Gruntfile.js'
     targets: ''
-    publishJUnitResults: 'true'
+    publishJUnitResults: 'false'
 
 - task: ArchiveFiles@2
   displayName: 'Create zip file artifact'
