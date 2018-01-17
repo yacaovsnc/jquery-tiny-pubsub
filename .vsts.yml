@@ -14,18 +14,12 @@ steps:
   inputs:
     command: 'custom'
     customCommand: 'install --save-dev grunt grunt-contrib-jshint' 
-    
-- task: Npm@1
-  displayName: 'npm install'
-  inputs:
-    command: 'custom'
-    customCommand: 'install --save-dev phantom' 
 
 - task: Npm@1
   displayName: 'npm install'
   inputs:
     command: 'custom'
-    customCommand: 'install --save-dev grunt-contrib-qunit grunt-contrib-uglify grunt-contrib-concat' 
+    customCommand: 'install --save-dev grunt-contrib-uglify grunt-contrib-concat' 
     
 - task: Npm@1
   displayName: 'npm install'
