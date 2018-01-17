@@ -11,6 +11,9 @@ queue:
 steps:
 - task: Npm@1
   displayName: 'npm install'
+  inputs:
+    command: 'custom'
+    customCommand: 'install --save-dev grunt' 
 
 - task: Grunt@0
   displayName: 'Run Grunt'
