@@ -15,6 +15,12 @@ steps:
     command: 'custom'
     customCommand: 'install --save-dev grunt' 
 
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    command: 'custom'
+    customCommand: 'install grunt-contrib-jshint --save-dev' 
+
 - task: Grunt@0
   displayName: 'Run Grunt'
   inputs:
