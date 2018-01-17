@@ -13,7 +13,8 @@ steps:
   displayName: 'npm install'
   inputs:
     command: 'custom'
-    customCommand: 'install --save-dev grunt grunt-contrib-jshint grunt-contrib-qunit grunt-contrib-uglify grunt-contrib-concat grunt-contrib-watch grunt-contrib-clean' 
+    customCommand: 'install --save-dev grunt grunt-contrib-jshint' 
+    #grunt-contrib-qunit grunt-contrib-uglify grunt-contrib-concat grunt-contrib-watch grunt-contrib-clean' 
 
 - task: Grunt@0
   displayName: 'Run Grunt'
